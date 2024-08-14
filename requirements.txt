@@ -16,9 +16,9 @@ markdown-it-py==3.0.0
 markupsafe==2.1.5
 mdurl==0.1.2
 narwhals==1.4.0
-numpy>=1.26.0
+numpy==1.21.0  # Versi lebih lama untuk kompatibilitas dengan scikit-surprise
 packaging==24.1
-pandas==2.2.2
+pandas==1.3.0  # Versi yang kompatibel dengan numpy 1.21.0
 pillow==10.4.0
 protobuf==5.27.3
 pyarrow==17.0.0
@@ -31,8 +31,8 @@ requests==2.32.3
 rich==13.7.1
 rpds-py==0.20.0
 scikit-learn==1.5.1
-scikit-surprise==1.1.1
-scipy==1.14.0
+scikit-surprise==1.1.1  # Pastikan ini kompatibel dengan numpy 1.21.0
+scipy==1.7.3  # Versi yang lebih lama agar sesuai dengan numpy 1.21.0
 six==1.16.0
 smmap==5.0.1
 streamlit==1.37.1
