@@ -1,0 +1,100 @@
+WorkFlow Data Analist pada Sistem Rekomendasi
+
+1. System Requirements
+	- assets 			= sudah di upload pada GDrive (Status : Sudah)
+	- install modul python 		= Pandas, ML, Suprise, matplotlib, seaborn, flask (Status : Sudah)
+	- koneksi			= mount drive dengan GDrive (Status : Sudah)
+	- (isi jika ada update pada workflow bagian System Requirements)
+
+2. Data Requirements
+	- import module (Status : Sudah)
+	- read file with pandas for csv files (Status : Sudah)
+	- print with pandas on head of files (Status : Sudah)
+	- (isi jika ada update pada workflow bagian data requirement)
+	
+
+3. Data Pre-Processing
+	- (isi jika ada update pada workflo2 bagian Data PP)
+
+4. Modelling
+	- (isi jika ada update pada workflo2 bagian Modelling)
+
+5. Evaluation
+	- (isi jika ada update pada workflo2 bagian Evaluation)
+
+6. Tunning dan Optimasi
+	- (isi jika ada update pada workflow bagian Tunning dan Optimasi)
+
+7. Implementasi dan pengujian
+	- (isi jika ada update pada workflow bagian Implementasi dan Pengujian)
+
+8. Monitoring
+	- (isi jika ada update pada workflow bagian Monitoring)
+
+
+Referensi Workflow yang sama
+
+2. Pra-pemrosesan Data
+Pembersihan Data:
+Menghapus data yang tidak relevan atau duplikat.
+Menangani data yang hilang atau outlier.
+
+Transformasi Data:
+Encode fitur kategorikal (misalnya, nama tempat wisata) menggunakan teknik seperti one-hot encoding.
+Normalisasi atau standarisasi fitur numerik jika diperlukan (misalnya rating, biaya).
+
+Feature Engineering:
+Buat fitur tambahan jika diperlukan (misalnya, mengubah waktu ke dalam format yang berguna).
+
+3. Pembangunan Model
+Content-Based Filtering:
+Model: Gunakan untuk merekomendasikan tempat wisata berdasarkan fitur tempat wisata seperti kategori, lokasi, atau deskripsi.
+Implementasi: Hitung kesamaan antara tempat wisata berdasarkan fitur-fitur tersebut.
+
+Collaborative Filtering:
+User-Based: Gunakan rating pengguna untuk menemukan kesamaan antara pengguna dan merekomendasikan tempat wisata berdasarkan preferensi pengguna serupa.
+Item-Based: Gunakan rating untuk menemukan kesamaan antara tempat wisata dan merekomendasikan tempat wisata yang mirip.
+
+Matrix Factorization:
+Model: Gunakan SVD atau ALS untuk menemukan pola tersembunyi dalam data rating.
+Implementasi: Uraikan matriks interaksi pengguna-tempat wisata untuk merekomendasikan tempat wisata.
+
+Hybrid Model:
+Integrasi Model: Gabungkan content-based filtering dengan collaborative filtering atau matrix factorization.
+Weighting: Tentukan bobot untuk masing-masing model.
+Combining Scores: Gabungkan skor rekomendasi dari berbagai model untuk mendapatkan rekomendasi akhir.
+Package Recommendations:
+Model: Gunakan data dari package_tourism.csv untuk merekomendasikan paket wisata berdasarkan waktu, biaya, dan rating.
+Implementasi: Integrasikan rekomendasi paket wisata dengan sistem rekomendasi utama.
+
+4. Evaluasi Model
+Pembagian Data:
+Pisahkan data menjadi set pelatihan dan set uji.
+Metrik Evaluasi:
+Gunakan metrik seperti Precision@K, Recall@K, Mean Absolute Error (MAE), atau Root Mean Squared Error (RMSE) untuk mengukur kinerja.
+Cross-Validation:
+Lakukan cross-validation untuk memastikan model tidak overfitting.
+
+5. Tuning dan Optimasi
+Hyperparameter Tuning:
+Sesuaikan parameter model untuk meningkatkan akurasi.
+Feature Engineering:
+Uji fitur tambahan atau modifikasi fitur yang ada untuk meningkatkan performa.
+
+6. Implementasi dan Pengujian
+Integrasi:
+Terapkan model ke dalam sistem rekomendasi.
+Pengujian:
+Uji sistem dengan data nyata untuk memastikan akurasi dan relevansi rekomendasi.
+
+7. Monitoring dan Pemeliharaan
+Monitoring:
+Pantau kinerja model secara terus-menerus.
+Pemeliharaan:
+Update model dengan data terbaru jika ada perubahan.
+
+8. Feedback Loop (Optional)
+Pengumpulan Feedback:
+Jika memungkinkan, tambahkan mekanisme untuk mengumpulkan feedback dari pengguna.
+Penyempurnaan:
+Gunakan feedback untuk menyesuaikan model di masa mendatang.
